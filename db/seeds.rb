@@ -1,10 +1,8 @@
+Shelter.destroy_all
 
-Address.destroy_all
-
-5.times do |index|
-  Place.create!(city: Faker::Address.city,
-                        street_address: Faker::Address.street_address)
+50.times do |index|
+  Shelter.create!(country: Faker::Address.street_address)
 
 end
 
-p "Created #{Place.count} places"
+p "Created #{Shelter.count} places"
