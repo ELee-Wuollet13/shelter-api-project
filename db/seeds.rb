@@ -16,3 +16,4 @@ class Seed
 end
 
 Seed.begin
+ 
