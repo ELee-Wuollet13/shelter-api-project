@@ -1,3 +1,2 @@
-class Quote < ApplicationRecord
-  
+class Shelter < ApplicationRecord
 end
