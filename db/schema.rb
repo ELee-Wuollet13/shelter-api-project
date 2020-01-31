@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2020_01_31_185104) do
   enable_extension "plpgsql"
 
   create_table "shelters", force: :cascade do |t|
-    t.string "address"
+    t.string "location"
   end
 
 end

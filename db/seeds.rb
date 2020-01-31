@@ -8,7 +8,7 @@ class Seed
   def generate_address
     20.times do |i|
       address = Address.create!(
-        address: Faker::Address.street_address
+        location: Faker::Address.street_address
       )
     end
   end
