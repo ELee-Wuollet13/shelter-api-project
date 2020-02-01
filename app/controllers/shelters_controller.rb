@@ -1,7 +1,7 @@
 class SheltersController < ApplicationController
 
   def index
-    @shelters = {}
+    @shelters = Shelter.all
     json_response(@shelters)
   end
 
