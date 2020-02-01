@@ -11,14 +11,18 @@ class SheltersController < ApplicationController
   end
 
   def create
-    @shelter = Shelter.create(shelter_params)
-    json_response(@shelter)
+    @shelter = Shelter.create!(shelter_params)
+    json_response(@shelter, :created)
   end
 
   def update
     @shelter = Shelter.find(params[:id])
-    @shelter.update(shelter_params)
+    @shelter.update!(shelter_params)
+    render status: 200, json: {
+      message: "Address updated"
+    }
   end
+
 
   def destroy
     @shelter = Shelter.find(params[:id])
