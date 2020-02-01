@@ -1,19 +1,8 @@
-class Seed
+Shelter.destroy_all
 
-  def self.begin
-    seed = Seed.new
-    seed.generate_shelters
-  end
+20.times do |index|
+  Shelter.create!(street_address: Faker::Address.street_address)
 
-  def generate_shelters
-    20.times do |i|
-      shelter = Shelter.create!(
-        street_address: Faker::Address.street_address
-      )
-      puts "Shelter #{i}: Author is #{shelter.author} and quotation is '#{shelter.content}'."
-    end
-  end
 end
 
-Seed.begin
- 
+p "Created #{Shelter.count} places"
