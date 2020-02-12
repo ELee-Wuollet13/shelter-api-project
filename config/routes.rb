@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-    resources :shelters
+  resources :cats
+  resources :dogs
+  resources :other
 end

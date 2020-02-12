@@ -32,9 +32,4 @@ ActiveRecord::Schema.define(version: 2020_02_01_214518) do
     t.string "other"
   end
 
-  create_table "shelters", force: :cascade do |t|
-    t.string "name"
-    t.string "street_address"
-  end
-
 end

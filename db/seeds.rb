@@ -4,20 +4,11 @@ class Seed
 
   def self.begin
     seed = Seed.new
-    seed.generate_shelters
     seed.generate_cats
     seed.generate_dogs
     seed.generate_others
   end
 
-  def generate_shelters
-    20.times do |i|
-      shelter = Shelter.create!(
-        name: Faker::Company.name,
-        street_address: Faker::Address.street_address
-      )
-    end
-  end
 
   def generate_cats
     20.times do |i|
