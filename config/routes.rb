@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   resources :cats
   resources :dogs
-  resources :other
+  resources :others
 end

@@ -6,7 +6,6 @@ class Seed
     seed = Seed.new
     seed.generate_cats
     seed.generate_dogs
-    seed.generate_others
   end
 
 
@@ -24,14 +23,6 @@ class Seed
       dog = Dog.create!(
         dog: Faker::Creature::Dog.name,
         dog_breed: Faker::Creature::Dog.breed
-      )
-    end
-  end
-
-  def generate_others
-    20.times do |i|
-      other = Other.create!(
-        other: Faker::Creature::Animal.name
       )
     end
   end

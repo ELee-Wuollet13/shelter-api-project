@@ -11,12 +11,12 @@ _This is an API of animals and places where they are currently living. It has a 
 ## Setup/Installation Requirements
 
 * _Access the GitHub repository by copying this (https://github.com/ELee-Wuollet13/shelter-api-project.git) link into a console command to 'git clone [link]'_
-* _navigate into the program and enter the console commands "bundle install", rails db:create, rake db:migrate and rake db:seed to fill the database with animals_
-* _Either open Postman to access the database elements or run 'rails s' and make an API 'GET' call to http://localhost:3000/shelters/._
+* _navigate into the program and enter the console command 'bash startup.bash'_
+* _Either open Postman to make an API 'GET' call to http://localhost:3000/ and then enter 'cats', 'dogs' or 'others' in postman to view a collection of potential pets._
 
 ## Known Bugs
 
-_As of submission the shelter_id column of cats, dogs and other remains empty_
+_As of submission there are no known bugs_
 
 ## Support and contact details
 
