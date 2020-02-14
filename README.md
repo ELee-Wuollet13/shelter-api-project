@@ -6,13 +6,23 @@
 
 ## Description
 
-_This is an API of animals and places where they are currently living. It has a long list of animals who can be searched for by name or breed. They are widely devided into serperate tabels of cats, dogs and others._
+_This is an API of animals and places where they are currently living. It has a long list of animals who can be searched for by name or breed. They are widely divided into sepererate tables of cats, dogs and others._
 
 ## Setup/Installation Requirements
 
 * _Access the GitHub repository by copying this (https://github.com/ELee-Wuollet13/shelter-api-project.git) link into a console command to 'git clone [link]'_
-* _navigate into the program and enter the console command 'bash startup.bash'_
-* _Either open Postman to make an API 'GET' call to http://localhost:3000/ and then enter 'cats', 'dogs' or 'others' in postman to view a collection of potential pets._
+* _navigate into the program and enter the console command 'bash startup.bash' this will automatically run: bundle install, rails db:create, rake db:migrate, rake db:seed, and rails s. As of submission no other setup is required._
+* _Postman is recommended for calling this API_
+* _To access all cats make a GET request to: http://localhost:3000/cats _
+* _To access cats by id make a GET request to: http://localhost:3000/cats/[cats_id] _
+* _To delete cats by id make a DELETE request to: http://localhost:3000/cats/[cats_id] _
+* _To access all dogs make a GET request to: http://localhost:3000/dogs _
+* _To access dogs by id make a GET request to: http://localhost:3000/dogs/[dogs_id] _
+* _To delete dogs by id make a DELETE request to: http://localhost:3000/dogs/[dogs_id] _
+* _To access all others make a GET request to: http://localhost:3000/others _
+* _To access others by id make a GET request to: http://localhost:3000/others/[others_id] _
+* _To delete others by id make a DELETE request to: http://localhost:3000/others
+
 
 ## Known Bugs
 

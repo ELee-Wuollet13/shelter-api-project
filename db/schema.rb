@@ -16,19 +16,16 @@ ActiveRecord::Schema.define(version: 2020_02_01_214518) do
   enable_extension "plpgsql"
 
   create_table "cats", force: :cascade do |t|
-    t.integer "shelter_id"
     t.string "cat"
     t.string "cat_breed"
   end
 
   create_table "dogs", force: :cascade do |t|
-    t.integer "shelter_id"
     t.string "dog"
     t.string "dog_breed"
   end
 
   create_table "others", force: :cascade do |t|
-    t.integer "shelter_id"
     t.string "other"
   end
 
